@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geogebra</title>
+
+     <!-- Fonts Google -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+     <!-- Connect ke CSS -->
+     <link rel="stylesheet" href="../style/style.css">
+     <link rel="stylesheet" href="../style/stylelatihan.css">
+
+
+    <!-- Geogebra -->
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+
+</head>
+<body>
+    <aside>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Header pada sidebar -->
+            <div class="header">
+                <div class="list-item">
+                    <a href="#">
+                        <img src="../asset/pokokbahasan.png" alt="" class="icon">
+                        <span class="description-header">Pokok Bahasan</span>
+
+                    </a>
+                </div>
+                <!-- Gambar -->
+                <div class="ilustration">
+                    <img src="../asset/Akar.png" alt="">
+                </div>
+            </div>
+            
+            <!-- Bagian Menu Konten -->
+            <div class="main">
+                <!-- Tujuan Pembelajaran -->
+                <div class="list-item">
+                    <a href="../index/tujuan.html">
+                        <img src="../asset/pendahuluan.png" alt="" class="icon">
+                        <span class="description">Pendahuluan</span>
+                    </a>
+                </div>
+                <!-- Menu Posisi Bagi 2 -->
+                <div class="list-item">
+                    <a href="../index/metodebagi2.html">
+                        <img src="../asset/Bagi2.png" alt="" class="icon">
+                        <span class="description">Metode Bagi Dua</span>
+                    </a>
+                </div>
+                
+                <!-- Menu Latihan Posisi Bagi 2 -->
+                <div class="list-item">
+                    <a href="../index/latihan.html">
+                        <img src="../asset/latihan.png" alt="" class="icon">
+                        <span class="description">Latihan</span>
+                    </a>
+                </div>
+                <!-- Menu Evaluasi -->
+                <div class="list-item">
+                    <a href="../index/evaluasi.html">
+                        <img src="../asset/Evaluasi.png" alt="" class="icon">
+                        <span class="description">Evaluasi</span>
+                    </a>
+                </div>
+                <!-- Menu Geogebra -->
+                <div class="list-item">
+                    <a href="../index/geogebra.html">
+                        <img src="../asset/geogebra.png" alt="" class="icon">
+                        <span class="description">Geogebra</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <!-- Menu hamburger-->
+            <div id="menu-button">
+                <input type="checkbox" id="menu-checkbox">
+                <!-- for disini berfungsi agar label di klik checkbox juga akan tercentang -->
+                <label for="menu-checkbox" id="menu-label">
+                    <div id="hamburger"></div>
+                </label>
+            </div>
+            <!-- Menu home -->
+            <div id="menu-home">
+                   <a href="../index.html">
+                        <img src="../asset/Home.png" alt="">
+                    </a>
+            </div>
+
+            <!-- header untuk judul -->
+            <div class="judul">
+                <center><h2 style="margin-top: 15px;">Geogebra</h2></center>
+            </div>
+            <!-- kotak konten -->
+            <div id="Konten">
+                <!-- isi materi -->
+                <div class="materi">
+                   
+                    <div style="width: 950px; height: 700px;" id="geogebra">
+                        <script>  
+                            var ggb1 = {"appName": "graphing", "width": 900, "height": 500, "showToolBar": true, "showAlgebraInput": true, "showMenuBar": true };
+                            var applet = new GGBApplet({filename: "Akar.ggb"}, ggb1, true);
+                            window.addEventListener("load", function() { 
+                                applet.inject('geogebra');
+                            });
+                        </script>
+                    </div>
+                    <br><br>
+                    <h3 style="background-color:#B6D3F8; text-align: center; font-weight: 700;"> Website Geogebra </h3>
+                    <br>
+                    <div class="geo" style="border: 2px solid #3E6FB2; border-radius:8px; width: 200px;">
+                        <a href="https://www.geogebra.org/classic" target="_blank" text-decoration="none">
+                            <img src="../asset/geogebra.png"> Geogebra Classic
+                        </a> 
+                    </div>
+                    <br>
+                    <p>Silahkan klik kotak di atas untuk membuka website geogebra dengan fitur yang lebih lengkap!</p>
+                    <h5>Petunjuk penggunaan spreadsheet pada geogebra:</h5>
+                    <br>
+                    <ol>
+                        <li style="margin-left: 25px;">Setelah masuk ke website geogebra, selanjutnya klik ikon seperti pada gambar di bawah ini.
+                            <center>
+                                <img src="../asset/geo1.png" width="600px" height="300px">
+                            </center>
+                        </li>
+                        <li style="margin-left: 25px;">Selanjutnya, klik titik tiga lalu pilih "Tampilkan Spreadsheet".
+                            <center>
+                                <img src="../asset/geo2.png" width="600px" height="300px">
+                            </center>
+                        </li>
+                        <li style="margin-left: 25px;">Selesai, spreadsheet dapat digunakan.
+                            <center>
+                                <img src="../asset/geo3.png" width="600px" height="300px">
+                            </center>
+                        </li>
+
+                    </ol>
+                    
+                    
+                </div>
+                <!--batas isi materi --> 
+            </div>
+            <!--batas kotak konten --> 
+        </div>
+        <!-- batas main-content -->
+    
+    </div>
+    </aside>
+
+    <!-- Connect ke js -->
+ <script src="../js/script.js"></script>
+</body>
+
+ 
+</html>

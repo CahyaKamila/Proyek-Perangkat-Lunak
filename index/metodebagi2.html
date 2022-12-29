@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metode Bagi Dua</title>
+
+     <!-- Fonts Google -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,600;0,700;1,400&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+
+     <!-- Connect ke CSS -->
+     <link rel="stylesheet" href="../style/style.css">
+     <link rel="stylesheet" href="../style/stylelatihan.css">
+
+
+    <!-- Connect MathJax-script-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <aside>
+
+        <div class="container">
+            <!-- Sidebar -->
+            <div class="sidebar" style="width: 500px;">
+                <!-- Header pada sidebar -->
+                <div class="header">
+                    <div class="list-item">
+                        <a href="#">
+                            <img src="../asset/pokokbahasan.png" alt="" class="icon">
+                            <span class="description-header">Pokok Bahasan</span>
+    
+                        </a>
+                    </div>
+                    <!-- Gambar -->
+                    <div class="ilustration">
+                        <img src="../asset/Akar.png" alt="">
+                    </div>
+                </div>
+                
+                <!-- Bagian Menu Konten -->
+                <div class="main">
+                    <!-- Tujuan Pembelajaran -->
+                    <div class="list-item">
+                        <a href="../index/tujuan.html">
+                            <img src="../asset/pendahuluan.png" alt="" class="icon">
+                            <span class="description">Pendahuluan</span>
+                        </a>
+                    </div>
+                    <!-- Menu Posisi Bagi 2 -->
+                    <div class="list-item">
+                        <a href="../index/metodebagi2.html">
+                            <img src="../asset/Bagi2.png" alt="" class="icon">
+                            <span class="description">Metode Bagi Dua</span>
+                        </a>
+                    </div>
+                    <!-- Menu Latihan Posisi Bagi 2 -->
+                    <div class="list-item">
+                        <a href="../index/latihan.html">
+                            <img src="../asset/latihan.png" alt="" class="icon">
+                            <span class="description">Latihan</span>
+                        </a>
+                    </div>
+                    <!-- Menu Evaluasi -->
+                    <div class="list-item">
+                        <a href="../index/evaluasi.html">
+                            <img src="../asset/Evaluasi.png" alt="" class="icon">
+                            <span class="description">Evaluasi</span>
+                        </a>
+                    </div>
+                    <!-- Menu Geogebra -->
+                    <div class="list-item">
+                        <a href="../index/geogebra.html">
+                            <img src="../asset/geogebra.png" alt="" class="icon">
+                            <span class="description">Geogebra</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="main-content">
+                <!-- Menu hamburger-->
+                <div id="menu-button">
+                    <input type="checkbox" id="menu-checkbox">
+                    <!-- for disini berfungsi agar label di klik checkbox juga akan tercentang -->
+                    <label for="menu-checkbox" id="menu-label">
+                        <div id="hamburger"></div>
+                    </label>
+                </div>
+                <!-- Menu home -->
+                <div id="menu-home">
+                       <a href="../index.html">
+                            <img src="../asset/Home.png" alt="">
+                        </a>
+                </div>
+
+                <!-- header untuk judul -->
+                <div class="judul">
+                    <center><h2 style="margin-top: 15px;">Metode Bagi Dua</h2></center>
+                </div>
+                <!-- kotak konten -->
+                <div class="konten">
+                    <!-- isi materi -->
+                    <div class="materi">
+                        <p>&emsp;&emsp;Metode Bagi Dua merupakan metode yang paling sederhana. Sebelum menggunakan metode ini diperlukan satu 
+                            selang akar. Idenya selang akar tersebut kita bagi dua sama besar. kemudian pilih satu bagian yang mengandung akar 
+                            sebagai selang baru. Hal ini dilakukan secara berulang sampai lebar selang kurang dari toleransi yang diinginkan.</p>
+                        
+                        <p>&emsp;&emsp;Secara geometris proses tersebut dapat dilihat pada Gambar di bawah ini. Selang akar \([a\)  , \(b]\) dibagi dua di \(T_1\) 
+                            Terbentuk dua selang yaitu \([a\) , \(T_1]\) dan \([T_1\) , \(b]\). Dari dua selang ini yang memuat akar adalah \([a\) , \(T_1]\) , 
+                            sehingga \([a\) , \(T_1]\) menjadi selang baru. Selanjutnya jika selang baru lebarnya kurang dari toleransi yang 
+                            diberikan maka akar dari persamaan adalah \(T_1\). Jika belum memenuhi, bagi dua lagi selang \([a\) , \(T_1]\) , sehingga 
+                            diperoleh \(T_2\) dan terbentuk selang baru lagi 
+                            \([T_2\) , \(T_1]\) . Proses diteruskan sampai diperoleh selang baru yang lebarnya kurang dari toleransi.
+                        </p>
+        
+                        <!-- ADA GAMBAR DI SINI -->
+                        <center>
+                            <img src="../asset/Gbagi2.png" alt="" class="icon" style="height: 300px; width: 550px; border: 1px solid rgb(0, 0, 0); padding: 20px;">
+                            <a href="https://www.geogebra.org/m/tbcgggzy" target="_self" text-decoration="none">     
+                            <br><i><font style="color: rgb(0, 51, 128);font-weight: bold;">Gambar 1.</font> Metode Bagi Dua</i> </a>
+                        </center>
+                        
+                        <p>Jika diketahui \((a, f_a)\) dan \((b, f_b)\), maka untuk menentukan \(T\) dapat dihitung dengan rumus:</p>
+                            <p style="background-color:#B6D3F8; text-align: center; font-weight: 700;"><br>
+                                \(T=\frac{ b + a }{2}\)
+                            </p>
+                            <br>
+                                
+                        <p>Berdasarkan uraian di atas maka algoritma untuk metode bagi dua adalah sebagai berikut:</p>
+                        
+                        <!-- kotak algoritma -->
+                        <div class="kotak">
+                            <!--icon algoritma -->
+                            <div class="card-header" style="align-items: center;" > 
+                                <img src="../asset/learning.png" width="40" height="40" margin="10px"/>&emsp;Algoritma</font> 
+                            </div>
+                            <ol>
+                                <li> Tetapkan selang akar [a,b] sedemikian hingga \(f(a) . f(b) < 0\)</li>
+                                <li> Hitung titik baru <center>\(T=\frac{ b + a }{2}\)</center></li>
+                                <li> Hitung \(f(T)\)</dt>
+                                <li> Jika \(f(a).f(T) < 0\), maka \(b = T\), selang baru \([a, T]\)</li>
+                                <p> Jika \(f(a).f(T) > 0\), maka \(a = T\), selang baru \([T, b]\)</p>
+                                <p> Jika \(f(a).f(T) = 0\), maka akar \(= T\), selesai</p>
+                                <li> Jika \(|a-b| = |selang\)  \(baru| ≤ toleransi\), maka akar adalah \(T\), selesai kembali ke \(1\)</li>
+                            </ol> 
+                        </div>
+                        <!-- kotak algoritma -->
+
+                    </div> 
+                     <!-- isi materi -->
+
+                    <!-- button -->
+                    <div class="nav">
+                        <center>
+                            <a href="../index/metodebagi2.html" class="button">1</a>
+                            <a href="../index/bagi2_2.html" class="button">2</a>
+                            <a href="../index/bagi2_3.html" class="button">3</a>
+                        </center>
+                    </div>
+                </div>
+                <!-- konten -->
+            </div>
+            <!-- main-konten -->
+ 
+        </div>
+     </aside>
+
+    <!-- Connect ke js -->
+    <script src="../js/script.js"></script>
+</body>
+
+ 
+</html>

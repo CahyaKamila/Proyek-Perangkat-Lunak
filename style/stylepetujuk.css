@@ -1,0 +1,48 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:#B6D3F8;
+}
+
+#konten {
+    background	: #B6D3F8;
+    float		: center;
+    width		: 85%;
+    height		: 500px;
+    font-size	: 16px;
+    text-align	: justify;
+    margin-top	: 10px;
+    padding-top: 20px;
+    border		: 10px solid #3E6FB2;
+    margin-left	: 50px;
+    
+    overflow: auto;
+}
+
+.petujuk {   
+    overflow:auto;
+    text-align:justify;
+    font-size: 12px;
+    padding-left: 20px;
+}
+    
+.petunjuk ol li{
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 500;
+}
+.petunjuk ol li p{
+    font-weight: 400;
+    padding: 10px;
+}
+#judul
+{
+    text-align: center;
+    width: 90%;
+    float	: center;
+	display	: inline-flex;
+    padding: 20px;
+    height: 20px;
+    position: fixed;
+}

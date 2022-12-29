@@ -1,0 +1,285 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    
+}
+
+aside{
+    width: 100%;
+    height: 100%;
+    float: center;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar{
+    background-color: #3E6FB2;
+    width: 320px;
+    padding: 10px;
+    padding-top: 30px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    transition: all ease-in .4s;
+}
+
+/* Sidebar hide */
+.sidebar.hide{
+    width: 80px;
+    transition: all ease-out .4s;
+}
+
+.main-content{
+    background-color: #9ebfe8;
+    flex-grow: 1;
+}
+
+.sidebar .description-header{
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 24px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+  
+}
+
+/* Sidebar hide header */
+.sidebar.hide .description-header{
+    display: none;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar .header .list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 5px;
+    border-radius: 8px;
+    height: 10px;
+    box-sizing: border-box;
+}
+
+.sidebar .header .list-item .icon{
+    margin-right: 8px;
+}
+
+.sidebar .header .ilustration{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 30px 0 15px 0;
+    box-sizing: border-box;
+}
+
+/* Sidebar hide ilustrasi */
+.sidebar.hide .ilustration{
+    display: none;
+    
+}
+
+.sidebar .main .list-item .description{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 10px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+/* Sidebar hide list-item */
+.sidebar.hide .list-item .description{
+    display: none;
+}
+
+.sidebar .main .list-item .icon{
+    margin-right: 10px;
+}
+
+.sidebar .main .list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.sidebar .main .list-item:hover{
+    background:#1B4965;
+    transition: all ease-in .3s;
+}
+
+/* Toogle menu */
+#menu-button{
+    width: 32px;
+    position: absolute;
+    overflow: hidden;
+}
+
+#menu-home{
+    position: absolute;
+    overflow: hidden;
+    top: 15px;
+    right: 30px;
+    display: inline-flex;   
+}
+
+#menu-label{
+    position: relative;
+    display: block;
+    height: 20px;
+    cursor: pointer
+}
+
+#menu-checkbox{
+    display:none;
+}
+
+#hamburger, #menu-label::after, #menu-label::before{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+}
+
+#menu-label:after, #menu-label:before{
+    content: "";
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1) left;
+}
+
+#menu-label:before{
+    top: 0;
+}
+
+#menu-label:after{
+    top: 8px;
+}
+
+#hamburger {
+    top: 16px;
+}
+
+#hamburger::before{
+    content: "MENU";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#menu-checkbox:checked + #menu-label::before{
+    left: -39px;
+}
+
+#menu-checkbox:checked + #menu-label::after{
+    left: 39px;
+}
+
+#menu-checkbox:checked + #menu-label #hamburger::before{
+    animation: moveUpThenDown 0.8s ease 0.2s forwards,
+    shakeUp 0.8s ease 0.2s forwards,
+    shakeDown 0.2s ease 0.8s forwards;
+}
+
+/* Membuat animasi tulisan "menu" ke atas */
+@keyframes moveUpThenDown{
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -27px;
+    }
+    100% {
+        top: -14px;
+    }
+}
+
+@keyframes shakeUp{
+    0% { 
+        transform: rotateZ(0);
+    }
+    25% {
+        transform: rotateZ (-10deg);
+    }
+    50% {
+        transform: rotateZ(0);
+    }
+    75% {
+        transform: rotateZ(10deg);
+    }
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+@keyframes shakeDown{
+    0% { 
+        transform: rotateZ(0);
+    }
+    80% {
+        transform: rotateZ(3deg);
+    }
+    90% {
+        transform: rotateZ(-3deg);
+    }
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+#judul
+{
+    text-align: center;
+    width: 90%;
+    float: center;
+	display: inline-flex;
+    padding: 20px;
+    height: 50px;
+    position: fixed;
+}
+
+.konten{
+    height: 100%;
+}
+
+.materi {
+    height: 470px;
+    width: 90%;
+    margin:20px;
+    padding:20px;
+    font-family: 'Poppins', sans-serif;
+	margin-top: 10px;
+    text-align: justify;
+    border: 5px solid #3E6FB2;
+    background-color: white;
+    overflow: scroll;
+} 
+
+.card-header {
+    background: rgb(0, 164, 170);
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: justify;
+    border-radius: 8px;
+    color: rgb(255, 255, 255);
+}
