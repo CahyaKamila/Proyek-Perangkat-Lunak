@@ -1,0 +1,26 @@
+th, td {
+    border-style:solid;
+    border-color: #96D4D4;
+   
+  }
+
+.tabel{
+    text-align: center;
+}
+
+.tabel table tr td button{
+   background-color: white;
+   border-style: none;
+}
+
+.tabel table tr td:hover{
+    background:#50a4d9;
+    transition: all ease-in .3s;
+    border-style: none;
+ }
+
+ .tabel table tr td button:hover{
+    background:#50a4d9;
+    transition: all ease-in .3s;
+    border-style: none;
+ }

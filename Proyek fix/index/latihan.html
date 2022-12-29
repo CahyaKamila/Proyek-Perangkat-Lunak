@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tujuan Pembelajaran</title>
+
+     <!-- Fonts Google -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+     <!-- Connect ke CSS -->
+     <link rel="stylesheet" href="../style/style.css">
+     <link rel="stylesheet" href="../style/stylelatihan.css">
+
+
+    <!-- Connect MathJax-script-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <aside>
+
+        <div class="container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Header pada sidebar -->
+                <div class="header">
+                    <div class="list-item">
+                        <a href="#">
+                            <img src="../asset/pokokbahasan.png" alt="" class="icon">
+                            <span class="description-header">Pokok Bahasan</span>
+    
+                        </a>
+                    </div>
+                    <!-- Gambar -->
+                    <div class="ilustration">
+                        <img src="../asset/Akar.png" alt="">
+                    </div>
+                </div>
+                
+                <!-- Bagian Menu Konten -->
+                <div class="main">
+                    <!-- Tujuan Pembelajaran -->
+                    <div class="list-item">
+                        <a href="../index/tujuan.html">
+                            <img src="../asset/pendahuluan.png" alt="" class="icon">
+                            <span class="description">Pendahuluan</span>
+                        </a>
+                    </div>
+                    <!-- Menu Posisi Bagi 2 -->
+                    <div class="list-item">
+                        <a href="../index/metodebagi2.html">
+                            <img src="../asset/Bagi2.png" alt="" class="icon">
+                            <span class="description">Metode Bagi Dua</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Menu Latihan Posisi Bagi 2 -->
+                    <div class="list-item">
+                        <a href="../index/latihan.html">
+                            <img src="../asset/latihan.png" alt="" class="icon">
+                            <span class="description">Latihan</span>
+                        </a>
+                    </div>
+                    <!-- Menu Evaluasi -->
+                    <div class="list-item">
+                        <a href="../index/evaluasi.html">
+                            <img src="../asset/Evaluasi.png" alt="" class="icon">
+                            <span class="description">Evaluasi</span>
+                        </a>
+                    </div>
+                    <!-- Menu Geogebra -->
+                    <div class="list-item">
+                        <a href="../index/geogebra.html">
+                            <img src="../asset/geogebra.png" alt="" class="icon">
+                            <span class="description">Geogebra</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="main-content">
+                <!-- Menu hamburger-->
+                <div id="menu-button">
+                    <input type="checkbox" id="menu-checkbox">
+                    <!-- for disini berfungsi agar label di klik checkbox juga akan tercentang -->
+                    <label for="menu-checkbox" id="menu-label">
+                        <div id="hamburger"></div>
+                    </label>
+                </div>
+                <!-- Menu home -->
+                <div id="menu-home">
+                       <a href="../index/home.html">
+                            <img src="../asset/Home.png" alt="">
+                        </a>
+                </div>
+                
+
+             <!-- ISI MATERI -->
+            <div class="judul">
+                <center><h2 style="margin-top: 15px;">Latihan</h2></center>
+            </div>
+            <div class="konten">
+                <div class="materi">
+                    <div class="content-card">
+                        <div class="card-header" > 
+                            <img src="../asset/check-list.png" width="35" height="35"/>&emsp;Ayo Berlatih
+                        </div>
+
+                        <div class="baris">
+                            <h3>Petunjuk Soal</h3>
+                                <ul style="margin-left: 20px;">
+                                    <p><li>Jika jawaban kamu benar, maka kotak akan bewarna "<font style="color: green;font-weight: bold;">Hijau</font>".</li></p>
+                                    <p><li>Jika jawaban kamu salah, maka kotak akan bewarna "<font style="color: red;font-weight: bold;">Merah</font>".</li></p>
+                                    <p><li>Jawaban yang berkoma, hanya dapat menerima maksimal 3 angka dibelakang koma.</li></p>
+                                    <p>Setelah mempelajari materi dan memahami contoh metode bagi dua. Lengkapilah isian berikut ini!</p>
+                                </ul>
+                                
+                            <hr><br>
+                            <p>Carilah akar persamaan tak linier dari persamaan</p>
+                            <p>\(f(x) = 3\) \(sin(x) — x^2 + 1\)</p>
+                            <p>dengan menggunakan metode bagi dua! Dengan selang akar awal \([1\) , \(2]\) . Hitung dengan toleransi \(0.001\).</p> 
+                            <br>
+
+                            <h3><b>Iterasi 1</h3>
+                                <div class="latihan">
+                                    <p>\(a &emsp;&emsp;= \)<input type="number" style="padding: 3px;" id="isian1"><span id="cekIsian1"></span></p>
+                                    <p>\(b &emsp;&emsp;=\) <input type="number" style="padding: 3px;" id="isian2"><span id="cekIsian2"></span></p>
+                                    <p>\(f(a) = \)   <input type="number" style="padding: 3px;" id="isian3"><span id="cekIsian3"></span></p>        
+                                    <p>\(f(b) = \) <input type="number" style="padding: 3px;" id="isian4"><span id="cekIsian4"></span></p>
+                                    <p>\(T=\frac{a+b}{2} = \) <input type="number" style="padding: 3px;" id="isian5"><span id="cekIsian5"></span></p>
+                                    <p>\(f(T) = \) <input type="number" style="padding: 3px;" id="isian6"><span id="cekIsian6"></span></p>
+                                    <p>\(f (a).f (T)\) &emsp;>&emsp; 0</span></p>
+                                    <p>selang baru <input type="number" style="padding: 2px;" id="isian7"><span id="cekIsian7"></span>, 
+                                    <input type="number" style="padding: 2px;" id="isian8"><span id="cekIsian8"></span></p>
+                                    <p>|&emsp;<input type="number" style="padding: 2px;" id="isian9"><span id="cekIsian9"></span>-
+                                    <input type="number" style="padding: 2px;" id="isian10"><span id="cekIsian10"></span>&emsp;|&emsp; = 
+                                    <input type="number" style="padding: 2px;" id="isian11"><span id="cekIsian11"></span> 
+                                    < Tolerasi, lanjut iterasi \(2\)</p>
+                                </div>
+                            
+                            <br>
+                            <button class="button-cek" onclick="cekJawaban1()">Cek Jawaban</button>
+                            
+                            <br>
+                            <h3><b>Iterasi 2</h3>
+                                <div class="latihan">
+                                    <p>\(a &emsp;&emsp;= \)<input type="number" style="padding: 3px;" id="isian12"><span id="cekIsian12"></span></p>
+                                    <p>\(b &emsp;&emsp;=\) <input type="number" style="padding: 3px;" id="isian13"><span id="cekIsian13"></span></p>
+                                    <p>\(f(a) = \)   <input type="number" style="padding: 3px;" id="isian14"><span id="cekIsian14"></span></p>        
+                                    <p>\(f(b) = \) <input type="number" style="padding: 3px;" id="isian15"><span id="cekIsian15"></span></p>
+                                    <p>\(T=\frac{a+b}{2} = \) <input type="number" style="padding: 3px;" id="isian16"><span id="cekIsian16"></span></p>
+                                    <p>\(f(T) = \) <input type="number" style="padding: 3px;" id="isian17"><span id="cekIsian17"></span></p>
+                                    <p>\(f (a).f (T)\) &emsp;>&emsp; 0</span></p>
+                                    <p>selang baru <input type="number" style="padding: 2px;" id="isian18"><span id="cekIsian18"></span>, 
+                                    <input type="number" style="padding: 2px;" id="isian19"><span id="cekIsian19"></span></p>
+                                    <p>|&emsp;<input type="number" style="padding: 2px;" id="isian20"><span id="cekIsian20"></span>-
+                                    <input type="number" style="padding: 2px;" id="isian21"><span id="cekIsian21"></span>&emsp;|&emsp; = 
+                                    <input type="number" style="padding: 2px;" id="isian22"><span id="cekIsian22"></span> 
+                                    < Tolerasi, lanjut iterasi \(3\)</p>
+                                </div>
+                                <br>
+                                <button class="button-cek" onclick="cekJawaban2()">Cek Jawaban</button>
+                                
+                            <br>
+                            <h3><b>Iterasi 3</h3>
+                                <div class="latihan">
+                                    <p>\(a &emsp;&emsp;= \)<input type="number" style="padding: 3px;" id="isian23"><span id="cekIsian23"></span></p>
+                                    <p>\(b &emsp;&emsp;=\) <input type="number" style="padding: 3px;" id="isian24"><span id="cekIsian24"></span></p>
+                                    <p>\(f(a) = \)   <input type="number" style="padding: 3px;" id="isian25"><span id="cekIsian25"></span></p>        
+                                    <p>\(f(b) = \) <input type="number" style="padding: 3px;" id="isian26"><span id="cekIsian26"></span></p>
+                                    <p>\(T=\frac{a+b}{2} = \) <input type="number" style="padding: 3px;" id="isian27"><span id="cekIsian27"></span></p>
+                                    <p>\(f(T) = \) <input type="number" style="padding: 3px;" id="isian28"><span id="cekIsian28"></span></p>
+                                    <p>\(f (a).f (T)\) &emsp;>&emsp; 0</span></p>
+                                    <p>selang baru <input type="number" style="padding: 2px;" id="isian29"><span id="cekIsian29"></span>, 
+                                    <input type="number" style="padding: 2px;" id="isian30"><span id="cekIsian30"></span></p>
+                                    <p>|&emsp;<input type="number" style="padding: 2px;" id="isian31"><span id="cekIsian31"></span>-
+                                    <input type="number" style="padding: 2px;" id="isian32"><span id="cekIsian32"></span>&emsp;|&emsp; = 
+                                    <input type="number" style="padding: 2px;" id="isian33"><span id="cekIsian33"></span> 
+                                    < Tolerasi</p>
+                                </div>
+                                
+                                <button class="button-cek" onclick="cekJawaban3()">Cek Jawaban</button>
+                                <button onclick="reset()" class="button-reset">Reset</button>
+                            <br>
+                           
+                            
+                        </div>
+                    </div>
+                <!-- batas materi -->
+                </div> 
+            
+                <!-- <div class="nav">
+                    <center>
+                        <a href="../index/home.html" class="button">Sebelumnya</a>
+                        <a href="../index/metodebagi2.html" class="button">Selanjutnya</a>
+                    </center>
+                </div> -->
+                
+            </div>
+            <!-- batas konten -->
+            
+            </div>
+
+    </div>
+    </aside>
+
+    <!-- Connect ke js -->
+ <script src="../js/script.js"></script>
+ <script src="../js/latihan.js"></script>
+</body>
+
+ 
+</html>

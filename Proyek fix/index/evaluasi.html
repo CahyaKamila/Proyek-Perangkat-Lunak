@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluasi</title>
+
+        <!-- Fonts Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+        <!-- Connect ke CSS -->
+        <link rel="stylesheet" href="../style/evaluasi.css">
+
+
+</head>
+<body onload="NextQuestion(0)">
+    <main>
+        <!-- modal quiz selesai -->
+        <div class="modal-container" id="score-modal">
+            <div class="modal-content-container">
+                <h1>Evaluasi</h1>
+        
+                <div class="grade-details">
+                    <p>Pertanyaan : 5</p>
+                    <p>Jawaban Salah : <span id="wrong-answers"></span></p>
+                    <p>Jawaban Benar : <span id="right-answers"></span></p>
+                    <p>Nilai Anda : <span id="grade-percentage"></span></p>
+                    <p ><span id="remarks"></span></p>
+                </div>
+              
+                <!-- modal saat tidak memencet jawaban -->
+                <div class="modal-button-container">
+                    <button>
+                    <a href="../index/metodebagi2.html" style="text-decoration: none; color: rgb(0, 0, 0);">Selesai</a>
+                    </button>
+                </div>
+              
+            </div>
+        </div>
+        <!-- modal quiz selesai -->
+
+        
+        <div class="game-quiz-container">
+            <div class="game-details-container">
+                <h1>Skor : <span id="player-score"></span> / 5</h1>
+                <h1>Pertanyaan : <span id="question-number"></span> / 5</h1>
+            </div>
+
+            <div class="game-question-container">
+                <h1 id="display-question"></h1>
+            </div>
+
+            <!-- soal evaluasi -->
+            <div class="game-options-container">
+               <div class="modal-container" id="option-modal">
+                    <div class="modal-content-container">
+                        <h1>Silahkan Pilih Opsi</h1>
+                        <!-- modal saat tidak memencet jawaban -->
+                        <div class="modal-button-container">
+                            <button>
+                            <a href="../index/evaluasi.html" style="text-decoration: none; color: rgb(0, 0, 0);">Oke, Mengerti</a>
+                            </button>
+                        </div>
+                    </div>
+               </div>
+              
+                <span>
+                    <input type="radio" id="option1" name="option" class="radio" value="pilihA" />
+                    <label for="option1" class="option" id="option-one-label"></label>
+                </span>
+              
+
+                <span>
+                    <input type="radio" id="option2" name="option" class="radio" value="pilihB" />
+                    <label for="option2" class="option" id="option-two-label"></label>
+                </span>
+              
+
+                <span>
+                    <input type="radio" id="option3" name="option" class="radio" value="pilihC" />
+                    <label for="option3" class="option" id="option-three-label"></label>
+                </span>
+              
+
+                <span>
+                    <input type="radio" id="option4" name="option" class="radio" value="pilihD" />
+                    <label for="option4" class="option" id="option-four-label"></label>
+                </span>
+
+            </div>
+            <!-- soal evaluasi -->
+
+            <div class="next-button-container">
+                <button onclick="handleNextQuestion()">Selanjutnya</button>
+            </div>
+
+        </div>
+    </main>
+    <script src="../js/evaluasi.js"></script>
+</body>
+</html>

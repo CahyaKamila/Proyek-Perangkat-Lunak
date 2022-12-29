@@ -1,0 +1,72 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.content-card {
+    background: #fff;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.card-header {
+    background: rgb(226, 243, 99);
+    width: 250px;
+    height: 35px;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: justify;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+}
+
+.baris {
+    margin-top: 16px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.baris .latihan p{
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+.button-cek {
+    background-color: rgb(40, 122, 38);
+    border: none;
+    color: rgb(246, 246, 246);
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.button-cek:hover {
+    background-color: rgb(63, 191, 123);
+    cursor: pointer;
+}
+
+.button-reset {
+    background-color: rgb(255, 140, 0);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.button-reset:hover {
+    background-color: rgb(227, 169, 21);
+    cursor: pointer;
+}
+
+
+

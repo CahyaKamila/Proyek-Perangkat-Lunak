@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metode Bagi Dua</title>
+
+     <!-- Fonts Google -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,600;0,700;1,400&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    
+
+     <!-- Connect ke CSS -->
+     <link rel="stylesheet" href="../style/style.css">
+     <link rel="stylesheet" href="../style/tujuan.css">
+
+
+    <!-- Connect MathJax-script-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <aside>
+
+        <div class="container">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Header pada sidebar -->
+                <div class="header">
+                    <div class="list-item">
+                        <a href="#">
+                            <img src="../asset/pokokbahasan.png" alt="" class="icon">
+                            <span class="description-header">Pokok Bahasan</span>
+                        </a>
+                    </div>
+                    <!-- Gambar -->
+                    <div class="ilustration">
+                        <img src="../asset/Akar.png" alt="">
+                    </div>
+                </div>
+                
+                <!-- Bagian Menu Konten -->
+                <div class="main">
+                    <!-- Pendahuluan -->
+                    <div class="list-item">
+                        <a href="../index/tujuan.html">
+                            <img src="../asset/pendahuluan.png" alt="" class="icon">
+                            <span class="description">Pendahuluan</span>
+                        </a>
+                    </div>
+                    <!-- Menu Posisi Bagi 2 -->
+                    <div class="list-item">
+                        <a href="../index/metodebagi2.html">
+                            <img src="../asset/Bagi2.png" alt="" class="icon">
+                            <span class="description">Metode Bagi Dua</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Menu Latihan Posisi Bagi 2 -->
+                    <div class="list-item">
+                        <a href="../index/latihan.html">
+                            <img src="../asset/latihan.png" alt="" class="icon">
+                            <span class="description">Latihan</span>
+                        </a>
+                    </div>
+                    <!-- Menu Evaluasi -->
+                    <div class="list-item">
+                        <a href="../index/evaluasi.html">
+                            <img src="../asset/Evaluasi.png" alt="" class="icon">
+                            <span class="description">Evaluasi</span>
+                        </a>
+                    </div>
+                    <!-- Menu Geogebra -->
+                    <div class="list-item">
+                        <a href="../index/geogebra.html">
+                            <img src="../asset/geogebra.png" alt="" class="icon">
+                            <span class="description">Geogebra</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="main-content">
+                <!-- Menu hamburger-->
+                <div id="menu-button">
+                    <input type="checkbox" id="menu-checkbox">
+                    <!-- for disini berfungsi agar label di klik checkbox juga akan tercentang -->
+                    <label for="menu-checkbox" id="menu-label">
+                        <div id="hamburger"></div>
+                    </label>
+                </div>
+                <!-- Menu home -->
+                <div id="menu-home">
+                       <a href="../index/home.html">
+                            <img src="../asset/Home.png" alt="">
+                        </a>
+                </div>
+                
+            <!-- header untuk judul -->
+            <div class="judul">
+                <center><h2 style="margin-top: 15px;">Metode Bagi Dua</h2></center>
+            </div>
+            <!-- kotak konten -->
+            <div class="konten">
+                <!-- isi materi -->
+                <div class="materi">
+                    <h3><b>Contoh:</b></h3>
+                    <p>Tentukan akar positif terbesar dari persamaan</p>
+                    <p>\(f(x) = 3\) \(sin(x) — x + 1 = 0\)</p>
+                    <p>Hitung dengan toleransi \(0.001\).</p> 
+                    <br>
+                    <p><b>Penyelesaian:</b></p>
+                    <p>Berdasarkan contoh di atas, dapat diketahui bahwa akar terbesar dari persamaan tersebut berada pada selang \((2\) , \(3)\).</p>
+                
+                    <br>
+                    <p><b>Iterasi 1: Selang Akar \((2\) , \(3)\)</b></p>
+                    <p>\(a = 2\)</p>
+                    <p>\(b = 3\)</p>
+                    <p>\(f(a)\) -> \(f(2) = 3\) \(sin(2) — 2 + 1 = 1.72789\)</p>            
+                    <p>\(f(b)\) -> \(f(3) = 3\) \(sin(3) — 3 + 1 = -1.57664\)</p>
+                    <p>\(T=\frac{2+3}{2} = 2.5\)</p>
+                    <p>\(f(T)\) -> \(f(2.5) = 3\) \(sin(2.5) — 2.5 + 1 = 0.29542\)</p>
+                    <p>\(f (a).f (T)\) -> \((1.72789\) . \(0.29542) > 0,\) 
+                        <br>maka \(a = 2.5\) , selang baru \((2.5\) , \(3)\) </p>
+                    <p>\(|2.5 — 3| = 0.5 > Tolerasi\), lanjut iterasi \(2\)</p>
+    
+                    <br>
+                    <p><b>Iterasi 2: Selang Akar \((2.5\) , \(3)\)</b></p>
+                    <p>\(a = 2.5\)</p>
+                    <p>\(b = 3\)</p>
+                    <p>\(f(a)\) -> \(f(2.5) = 3\) \(sin(2.5) — 2.5 + 1 = 0.2954164\)</p>            
+                    <p>\(f(b)\) -> \(f(3) = 3\) \(sin(3) — 3 + 1 = -1.57664\)</p>
+                    <p>\(T=\frac{2.5+3}{2} = 2.75\)</p>
+                    <p>\(f(T) = 3\) \(sin(2.75)- 2.75 + 1 = -0.605017\)</p>
+                    <p>\(f (a).f (T)\) -> \((0.2954164\) . \(-0.605017) < 0,\) maka 
+                        <br>\(b = 2.75\), selang baru \((2.5, 2.75)\) </p>
+                    <p>\(|2.5 — 2.75| = 0.25 > Tolerasi\), lanjut iterasi \(3\)</p>
+               
+                    <br>
+                    <p><b>Iterasi 3: Selang Akar \((2.5\) , \(2.75)\)</b></p>
+                    <p>\(a = 2.5\)</p>
+                    <p>\(b = 2.75\)</p>
+                    <p>\(f(a)\) -> \(f(2.5) = 3\) \(sin(2.5) — 2.5 + 1 = 0.2954164\)</p>            
+                    <p>\(f(b)\) -> \(f(2.75) = 3\) \(sin(2.75) — 2.75 + 1 = -0.605017\)</p>
+                    <p>\(T=\frac{2.5+2.75}{2} = 2.625\)</p>
+                    <p>\(f(T) = 3\) \(sin(2.625)- 2.625 + 1 = -0.1432491\)</p>
+                    <p>\(f (a).f (T)\) -> \((0.2954164\) . \(-0.1432491) < 0,\) maka 
+                        <br>\(b = 2.625\), selang baru \((2.5, 2.625)\) </p>
+                    <p>\(|2.5 — 2.625| = 0.125 > Tolerasi\), lanjut iterasi \(4\)</p>
+                    
+                </div> 
+
+                <div class="nav">
+                    <center>
+                        <!-- <a href="../index/metodebagi2.html" class="button">Sebelumnya</a> -->
+                        <a href="../index/metodebagi2.html" class="button">1</a>
+                        <a href="../index/bagi2_2.html" class="button">2</a>
+                        <a href="../index/bagi2_3.html" class="button">3</a>
+                        <!-- <a href="../index/bagi2_3.html" class="button">Selanjutnya</a> -->
+                    </center>
+                </div>    
+            </div>
+        </div>
+ 
+     </div>
+     </aside>
+
+    <!-- Connect ke js -->
+ <script src="../js/script.js"></script>
+</body>
+
+ 
+</html>
